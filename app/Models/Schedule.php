@@ -24,6 +24,6 @@ class Schedule extends Model
     }
 
     public function time(){
-        return $this->hasMany(Time::class);
+        return $this->hasMany(Time::class,'scheduleID');
     }
 }
